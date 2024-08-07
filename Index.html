@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicle Transport Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Vehicle Transport Converter</h1>
+    </header>
+    <div class="container">
+        <div>
+            <div class="input-group">
+                <label for="distance">Distance (km):</label>
+                <input type="number" id="distance" name="distance">
+            </div>
+            <fieldset class="input-group">
+                <legend>Select Vehicle Type:</legend>
+                <input type="radio" id="alto" name="vehicle" value="Maruti Suzuki Alto" checked>
+                <label for="alto">Maruti Suzuki Alto</label><br>
+                <input type="radio" id="i20" name="vehicle" value="Hyundai i20">
+                <label for="i20">Hyundai i20</label><br>
+                <input type="radio" id="nexon" name="vehicle" value="Tata Nexon">
+                <label for="nexon">Tata Nexon</label><br>
+                <input type="radio" id="city" name="vehicle" value="Honda City">
+                <label for="city">Honda City</label><br>
+                <input type="radio" id="thar" name="vehicle" value="Mahindra Thar">
+                <label for="thar">Mahindra Thar</label><br>
+                <input type="radio" id="innova" name="vehicle" value="Toyota Innova Crysta">
+                <label for="innova">Toyota Innova Crysta</label><br>
+                <input type="radio" id="seltos" name="vehicle" value="Kia Seltos">
+                <label for="seltos">Kia Seltos</label><br>
+                <input type="radio" id="kwid" name="vehicle" value="Renault Kwid">
+                <label for="kwid">Renault Kwid</label><br>
+                <input type="radio" id="ecosport" name="vehicle" value="Ford EcoSport">
+                <label for="ecosport">Ford EcoSport</label><br>
+                <input type="radio" id="tiago" name="vehicle" value="Tata Tiago">
+                <label for="tiago">Tata Tiago</label>
+            </fieldset>
+            <button onclick="calculate()">Calculate</button>
+            <button onclick="compareAll()">Compare All Options</button>
+        </div>
+        <div class="results">
+            <h2>Result</h2>
+            <p id="result"></p>
+        </div>
+    </div>
+    
+    <div class="comparison">
+        <h2>Comparison</h2>
+        <table id="comparisonTable">
+            <thead>
+                <tr>
+                    <th>Vehicle Type</th>
+                    <th>Travel Time</th>
+                    <th>Fuel Consumption</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Comparison results-->
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
